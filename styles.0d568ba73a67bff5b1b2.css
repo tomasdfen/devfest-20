@@ -8136,6 +8136,10 @@ app-root:empty+.loading h1 {
     margin-bottom: 50px
 }
 
+.intro-1 {
+    background: url(hero.f52e8f53f3e16695a7df.png) center center/cover no-repeat
+}
+
 
 /*!
  * Material Design for Bootstrap 4
@@ -10023,6 +10027,41 @@ button.bg-light:hover {
 .card-img-64 {
     width: 64px;
     height: 64px
+}
+
+@font-face {
+    font-family: Roboto;
+    src: local(Roboto Thin), url(Roboto-Thin.dfe56a876d0282555d1e.eot);
+    src: url(Roboto-Thin.dfe56a876d0282555d1e.eot?#iefix) format("embedded-opentype"), url(Roboto-Thin.954bbdeb86483e4ffea0.woff2) format("woff2"), url(Roboto-Thin.7500519de3d82e33d158.woff) format("woff"), url(Roboto-Thin.94998475f6aea65f5584.ttf) format("truetype");
+    font-weight: 200
+}
+
+@font-face {
+    font-family: Roboto;
+    src: local(Roboto Light), url(Roboto-Light.a990f611f2305dc12965.eot);
+    src: url(Roboto-Light.a990f611f2305dc12965.eot?#iefix) format("embedded-opentype"), url(Roboto-Light.69f8a0617ac472f78e45.woff2) format("woff2"), url(Roboto-Light.3b813c2ae0d04909a33a.woff) format("woff"), url(Roboto-Light.46e48ce0628835f68a73.ttf) format("truetype");
+    font-weight: 300
+}
+
+@font-face {
+    font-family: Roboto;
+    src: local(Roboto Regular), url(Roboto-Regular.30799efa5bf74129468a.eot);
+    src: url(Roboto-Regular.30799efa5bf74129468a.eot?#iefix) format("embedded-opentype"), url(Roboto-Regular.2751ee43015f9884c364.woff2) format("woff2"), url(Roboto-Regular.ba3dcd8903e3d0af5de7.woff) format("woff"), url(Roboto-Regular.df7b648ce5356ea1ebce.ttf) format("truetype");
+    font-weight: 400
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(Roboto-Medium.4d9f3f9e5195e7b074bb.eot);
+    src: url(Roboto-Medium.4d9f3f9e5195e7b074bb.eot?#iefix) format("embedded-opentype"), url(Roboto-Medium.574fd0b50367f886d359.woff2) format("woff2"), url(Roboto-Medium.fc78759e93a6cac50458.woff) format("woff"), url(Roboto-Medium.894a2ede85a483bf9bed.ttf) format("truetype");
+    font-weight: 500
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(Roboto-Bold.ecdd509cadbf1ea78b8d.eot);
+    src: url(Roboto-Bold.ecdd509cadbf1ea78b8d.eot?#iefix) format("embedded-opentype"), url(Roboto-Bold.39b2c3031be6b4ea96e2.woff2) format("woff2"), url(Roboto-Bold.dc81817def276b4f2139.woff) format("woff"), url(Roboto-Bold.e31fcf1885e371e19f57.ttf) format("truetype");
+    font-weight: 700
 }
 
 body {
@@ -19132,6 +19171,14 @@ body.scrollable {
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */
+
+@font-face {
+    font-family: FontAwesome;
+    src: url(fontawesome-webfont.674f50d287a8c48dc19b.eot?v=4.7.0);
+    src: url(fontawesome-webfont.674f50d287a8c48dc19b.eot?#iefix&v=4.7.0) format("embedded-opentype"), url(fontawesome-webfont.af7ae505a9eed503f8b8.woff2?v=4.7.0) format("woff2"), url(fontawesome-webfont.fee66e712a8a08eef580.woff?v=4.7.0) format("woff"), url(fontawesome-webfont.b06871f281fee6b241d6.ttf?v=4.7.0) format("truetype"), url(fontawesome-webfont.912ec66d7572ff821749.svg?v=4.7.0#fontawesomeregular) format("svg");
+    font-weight: 400;
+    font-style: normal
+}
 
 .fa {
     display: inline-block;

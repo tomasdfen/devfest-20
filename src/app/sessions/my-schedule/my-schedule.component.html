@@ -6,7 +6,7 @@
   <section class="section">
     <div class="d-print-none">
       <div class="pull-right" style="margin-top: -45px;">
-        <a href="javascript:window.print();" title="Print Schedule"><i class="fa fa-print" aria-hidden="true"></i> Print Schedule</a>
+        <a href="javascript:window.print();" title="Print Schedule"><i class="fa fa-print" aria-hidden="true"></i> Imprimir horario</a>
       </div>
       <h1 class="section-heading">My Schedule</h1>
       <div class="text-center">
@@ -43,7 +43,7 @@
       <h5>You haven't added any sessions yet! Go back to the <a routerLink="/sessions">Schedule</a> and add some!</h5>
     </div>
     <div class="text-center" *ngIf="(sessions$ | async)?.length === 0">
-      <h5>Stay tuned! Once sessions have been added, you can create your own schedule and view it here!</h5>
+      <h5>Mantente alerta! Una vez aparezcan las sesiones, podras crear tu propio horario con el que no te perderas ninguna</h5>
     </div>
   </section>
   <!--Section: Schedule-->

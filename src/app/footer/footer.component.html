@@ -5,7 +5,7 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-lg-3 col-md-6 ml-auto">
-        <h5 class="title font-weight-bold mt-3 mb-4">About {{ config?.groupName }}</h5>
+        <h5 class="title font-weight-bold mt-3 mb-4">Sobre {{ config?.groupName }}</h5>
         <!--Social buttons-->
         <div class="social-section mb-3">
           <ul>
@@ -32,7 +32,7 @@
       </div>
       <hr class="w-100 clearfix d-sm-none">
       <div class="col-lg-2 col-md-6 ml-auto">
-        <h5 class="title font-weight-bold mt-3 mb-4">Contact</h5>
+        <h5 class="title font-weight-bold mt-3 mb-4">Contacto</h5>
         <ul>
           <li><a href="mailto:{{ config?.eventEmail }}" target="_blank" rel="noopener">{{ config?.eventEmail }}</a></li>
           <li *ngIf="config?.eventTwitter"><a href="https://twitter.com/intent/tweet?text=@{{ config?.eventTwitter }}" target="_blank" rel="noopener">@{{ config?.eventTwitter }}</a></li>

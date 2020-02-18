@@ -1,12 +1,8 @@
 {
-  "name": "Devfest Sevilla '20",
-  "short_name": "Devfest Sevilla '20",
-  "theme_color": "#2196f3",
-  "background_color": "#2196f3",
-  "display": "browser",
-  "orientation": "portrait",
-  "scope": "/",
-  "start_url": "/devfest.gdgsevilla.com",
+    "name": "DevFest Sevilla '20",
+    "theme_color": "#25557b",
+    "background_color": "#294d6a",
+    "display": "standalone",
   "icons": [
     {
       "src": "assets/icons/icon-72x72.png",
