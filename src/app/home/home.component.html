@@ -8,13 +8,18 @@
             <div class="container text-center">
                 <h1 class="h1-responsive font-weight-bold">DevFest Sevilla '20</h1>
                 <p class="lead mt-4 mb-5">
-                    Viernes, 11 de Octubre, 2019<br/>
-                    <strong>@&nbsp;{{ config?.venueName }}</strong>
+                    <!-- Viernes, 11 de Octubre, 2019<br/> -->
+                    Fecha proximamente... <br>
+                    <!-- <strong>@&nbsp;{{ config?.venueName }}</strong> -->
                 </p>
                 <p class="lead mt-4 mb-5">
-                    A 100% community organized developer conference with industry experts presenting on exciting topics!
+                    #GDGSevilla #GDGSpain #GDG #Devfest
                 </p>
-                <a *ngIf="config?.ticketURL" target="_blank" rel="noopener" [href]="config?.ticketURL" class="btn btn-primary btn-lg" rel="nofollow">Reserva tu asiento</a>
+                <p class="lead mt-4 mb-5">
+                    Un evento organizado al 100% por la comunidad con expertos en la industria presentando tópicos apasionantes
+                </p>
+                <!-- <a *ngIf="config?.ticketURL" target="_blank" rel="noopener" [href]="config?.ticketURL" class="btn btn-primary btn-lg" rel="nofollow">Reserva tu asiento</a> -->
+                <a *ngIf="config?.ticketURL" target="_blank" rel="noopener" class="btn btn-primary btn-lg" rel="nofollow">Entradas próximamente...</a>
                 <a *ngIf="config?.speakerURL" target="_blank" rel="noopener" [href]="config?.speakerURL" class="btn btn-default btn-lg" rel="nofollow">¿Quieres ser ponente?</a>
             </div>
             <div class="arrow bounce">
@@ -56,12 +61,14 @@
     <section class="text-center" *ngIf="config?.eventGoogle || config?.eventFacebook || config?.eventTwitter || config?.eventInstagram">
         <!--Social buttons-->
         <div class="social-section mb-3">
-            <h5 class="title mt-3 mb-4">Follow us on social media</h5>
+            <h5 class="title mt-3 mb-4">Siguenos en nuestras redes sociales</h5>
             <ul>
                 <li *ngIf="config?.eventGoogle"><a class="btn-social-all" href="https://plus.google.com/{{ config?.eventGoogle }}" title="Google+" target="_blank" rel="noopener"><i class="fa fa-google-plus"></i></a></li>
                 <li *ngIf="config?.eventFacebook"><a class="btn-social-all" href="https://www.facebook.com/{{ config?.eventFacebook }}" title="Facebook" target="_blank" rel="noopener"><i class="fa fa-facebook"></i></a></li>
                 <li *ngIf="config?.eventTwitter"><a class="btn-social-all" href="https://twitter.com/{{ config?.eventTwitter }}" title="Twitter" target="_blank" rel="noopener"><i class="fa fa-twitter"></i></a></li>
-                <li *ngIf="config?.eventInstagram"><a class="btn-social-all" href="https://www.instagram.com/{{ config?.eventInstagram }}" title="Instagram" target="_blank" rel="noopener"><i class="fa fa-instagram"></i></a></li>
+                <li><a class="btn-social-all" href="https://www.instagram.com/gdgsevilla" title="Instagram" target="_blank" rel="noopener"><i class="fa fa-instagram"></i></a></li>
+                <li><a class="btn-social-all" href="https://www.meetup.com/es-ES/GDGSevilla/" title="Meetup" target="_blank" rel="noopener"><i class="fa fa-meetup"></i></a>
+
             </ul>
         </div>
         <!--/.Social buttons-->
@@ -88,16 +95,17 @@
     <!--Section: Featured Speakers-->
 
     <div class="divider-new" id="the-venue" *ngIf="config?.venueName">
-        <h2 class="h2-responsive">The Venue</h2>
+        <h2 class="h2-responsive">¿Dónde se hará el evento?</h2>
     </div>
 
     <!--Section: The Venue-->
     <section *ngIf="config?.venueName">
         <div class="row">
             <div class="col-md-5">
-                <h2 class="h2-responsive">{{ config?.venueName }}</h2>
+                <h2 class="h2-responsive">Próximamente...</h2>
+                <!-- <h2 class="h2-responsive">{{ config?.venueName }}</h2> -->
                 <hr>
-                <p [innerHTML]="config?.venueDescription"></p>
+                <!-- <p [innerHTML]="config?.venueDescription"></p> -->
             </div>
             <div class="col-md-7">
                 <div class="card">
@@ -109,7 +117,7 @@
     <!--/Section: The Venue-->
 
     <div class="divider-new" *ngIf="config?.venueGeoData">
-        <h2 class="h2-responsive">Location</h2>
+        <h2 class="h2-responsive">Localización</h2>
     </div>
 
     <!--Section: Location-->
@@ -145,17 +153,17 @@
     <!--Section: Location-->
 
     <div class="divider-new pt-5">
-        <h2 class="h2-responsive">Code of Conduct</h2>
+        <h2 class="h2-responsive">Código de conducta</h2>
     </div>
 
     <!--Section: CoC-->
     <section id="coc" class="text-center">
         <h5>Be nice. Be respectful. Be collaborative.</h5>
-        <p>{{ config?.eventName }} is dedicated to a harassment-free conference experience for everyone.</p>
+        <p>Queremos que el {{ config?.eventName }} sea una experiencia exenta de conflictos para todo el mundo</p>
         <p>
-            Before attending, please review the <a routerLink="/code-of-conduct">{{ config?.eventName }} Code of Conduct</a>.
-            <br/>This Code of Conduct applies to all attendees, speakers, volunteers, vendors, and organizers at {{ config?.eventName }}.
-            <br/>Please <a href="mailto:{{ config?.eventEmail }}?subject=Code of Conduct - {{ config?.eventName }}" target="_blank" rel="noopener">contact us</a> if you have any questions.
+            Antes de venir, echale un ojo a el <a href="https://docs.google.com/document/d/1Wz_w6Z7usMnXKFMpOY4IPbA35twK7Uc4CAxScGDiwOk">código de conducta del GDG Devfest Sevilla '20</a>
+            <br/>Este codigo de conducta se aplica a todos los asistentes, ponentes, voluntarios, sponsors y organizadores del {{ config?.eventName }}.
+            <br/>Por favor <a href="mailto:{{ config?.eventEmail }}?subject=Codigo de conducta - {{ config?.eventName }}" target="_blank" rel="noopener">contactanos</a> si tienes alguna pregunta
         </p>
     </section>
     <!--Section: CoC-->
@@ -224,8 +232,8 @@
     <!--Section: Sponsors-->
     <section class="section" *ngIf="(sponsors$ | async)?.length > 0 && sponsors$ | async as sponsors">
         <div class="col sponsors">
-            <h4>We partner with some of the<br/>world's most innovative brands.</h4>
-            <a *ngIf="config?.sponsorURL" class="btn btn-primary waves-light" [href]="config?.sponsorURL" target="_blank" rel="noopener">Conviertete en sponsor</a>
+            <h4>Colaboramos con algunas de<br/>las marcas mas innovativas del mundo</h4>
+            <a *ngIf="config?.sponsorURL" class="btn btn-primary waves-light" [href]="config?.sponsorURL" target="_blank" rel="noopener">Conviertete en sponsor </a>
         </div>
         <div class="col sponsors" *ngFor="let level of levels$ | async">
             <h3 style="font-weight: bold;">

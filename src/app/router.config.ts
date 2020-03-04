@@ -67,7 +67,7 @@ export const routerConfig: Route[] = [{
   path: 'profile',
   component: ProfileComponent,
   canActivate: [AuthGuard],
-  data: { title: 'My Profile' }
+  data: { title: 'Mi perfil' }
 }, {
   path: 'my-schedule',
   component: MyScheduleComponent,
@@ -151,7 +151,7 @@ export const routerConfig: Route[] = [{
 }, {
   path: 'code-of-conduct',
   component: CocComponent,
-  data: { title: 'Code of Conduct' }
+  data: { title: 'Codigo de conducta' }
 }, {
   path: '',
   redirectTo: 'home',
